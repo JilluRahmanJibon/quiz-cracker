@@ -1,13 +1,14 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
+import React, { createContext } from "react";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Navbar from "../components/Navbar";
-
+export const LoadDataContext = createContext([]);
 const Layout = () => {
+	const loadData = useLoaderData();
 	return (
-		<div>
+		<LoadDataContext.Provider value={loadData}>
 			<Navbar />
 			<Outlet />
-		</div>
+		</LoadDataContext.Provider>
 	);
 };
 
