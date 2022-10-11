@@ -2,7 +2,7 @@ import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-const QuizQuestions = ({ questionAndAnswer, count }) => {
+const QuizQuestions = ({ questionAndAnswer, I }) => {
 	const [open, setOpen] = useState(false);
 	const { correctAnswer, question, options } = questionAndAnswer;
 	const answer = correctAnswer.replaceAll(" ", "");
@@ -20,9 +20,13 @@ const QuizQuestions = ({ questionAndAnswer, count }) => {
 	return (
 		<div className="border-2 mb-12 text-purple-500 rounded p-4 shadow-md lg:w-1/2 md:w-4/5 mx-2 md:mx-auto">
 			<div className=" flex justify-between relative">
-				<div className="text-center w-full">
-					<h1>{count}</h1>
-					<p className="text-xl text-semibold">{question.slice(3, -4)}</p>
+				<div className="text-center flex w-full">
+					<h1 className="font-semibold">
+						Quiz:<span className="font-bold text-black">{I}</span>
+					</h1>
+					<p className="text-xl w-full text-semibold">
+						{question.slice(3, -4)}
+					</p>
 				</div>
 				<div className="flex flex-row-reverse ">
 					<div

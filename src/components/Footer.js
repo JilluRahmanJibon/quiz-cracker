@@ -138,8 +138,16 @@ const Footer = () => {
 						</div>
 					</div>
 				</div>
-				<div className="py-6 text-sm text-center dark:text-gray-400">
-					© 1968 Company Co. All rights reserved.
+				<div className="py-6 text-sm text-center dark:text-gray-500 font-semibold">
+					© 2022{" "}
+					<a
+						title="Learn from programming-hero team."
+						href="https:/web.programming-hero.com/"
+						target={"_blank"}
+						className="text-red-400 italic font-bold">
+						Programming-Hero
+					</a>{" "}
+					Student. All rights reserved.
 				</div>
 			</footer>
 		</div>
