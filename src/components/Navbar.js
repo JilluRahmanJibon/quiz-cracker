@@ -10,7 +10,7 @@ const Navbar = () => {
 				<div>
 					<NavLink to="/" className="font-bold text-2xl">
 						{" "}
-						Quiz Crackers!
+						Quizzes on PL
 					</NavLink>
 				</div>
 				<div className="flex flex-row-reverse">

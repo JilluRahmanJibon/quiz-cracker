@@ -1,9 +1,8 @@
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const HomeData = ({ data }) => {
-	console.log(data);
 	const { id, logo, name, total } = data;
 	const navigate = useNavigate();
 	const handleStartPractice = () => {

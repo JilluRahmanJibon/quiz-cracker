@@ -2,24 +2,28 @@ import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
-const QuizQuestions = ({ questionAndAnswer }) => {
-	const { correctAnswer, question, options } = questionAndAnswer;
-	// console.log(questionAndAnswer);
+const QuizQuestions = ({ questionAndAnswer, count }) => {
 	const [open, setOpen] = useState(false);
+	const { correctAnswer, question, options } = questionAndAnswer;
+	const answer = correctAnswer.replaceAll(" ", "");
+	console.log(answer);
 	const quizIdentifyHandler = innerText => {
-		if (innerText === correctAnswer) {
+		const inner = innerText.replaceAll(" ", "");
+		console.log(inner);
+		if (inner === answer) {
 			toast.success("Congratulations ! you are selected right answer.", {
-				autoClose: 1000,
+				autoClose: 500,
 			});
 		} else {
-			toast.warning("you are selected wrong answer ! ");
+			toast.warning("you are selected wrong answer ! ", { autoClose: 500 });
 		}
 	};
 	return (
 		<div className="border-2 mb-12 text-purple-500 rounded p-4 shadow-md lg:w-1/2 md:w-4/5 mx-2 md:mx-auto">
 			<div className=" flex justify-between relative">
 				<div className="text-center w-full">
-					<p className="text-xl text-semibold">{question}</p>
+					<h1>{count}</h1>
+					<p className="text-xl text-semibold">{question.slice(3, -4)}</p>
 				</div>
 				<div className="flex flex-row-reverse ">
 					<div
