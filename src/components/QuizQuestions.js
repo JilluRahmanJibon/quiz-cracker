@@ -6,7 +6,6 @@ const QuizQuestions = ({ questionAndAnswer, count }) => {
 	const [open, setOpen] = useState(false);
 	const { correctAnswer, question, options } = questionAndAnswer;
 	const answer = correctAnswer.replaceAll(" ", "");
-	console.log(answer);
 	const quizIdentifyHandler = innerText => {
 		const inner = innerText.replaceAll(" ", "");
 		console.log(inner);
