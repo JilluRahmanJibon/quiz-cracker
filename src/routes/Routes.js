@@ -4,7 +4,7 @@ import Blog from "../components/Blog";
 import ErrorPage from "../components/ErrorPage";
 import Main from "../components/Main";
 import Quiz from "../components/Quiz";
-import Statisticks from "../components/Statisticks";
+import Statistics from "../components/Statistics";
 import Topic from "../components/Topic";
 import Layout from "../Layout/Layout";
 
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
 		children: [
 			{ path: "/", element: <Main /> },
 			{ path: "/home", element: <Main /> },
-			{ path: "statisticks", element: <Statisticks /> },
+			{ path: "statistics", element: <Statistics /> },
 			{ path: "topic", element: <Topic /> },
 			{ path: "blog", element: <Blog /> },
 			{ path: "about", element: <About /> },

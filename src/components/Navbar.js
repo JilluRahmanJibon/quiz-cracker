@@ -29,10 +29,10 @@ const Navbar = () => {
 							</li>
 						</NavLink>
 						<NavLink
-							to="statisticks"
+							to="statistics"
 							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold    `}>
 							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
-								Statisticks
+								Statistics
 							</li>
 						</NavLink>
 						<NavLink

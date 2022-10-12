@@ -20,7 +20,7 @@ const HomeData = ({ data }) => {
 				</h1>
 				<button
 					onClick={handleStartPractice}
-					className="flex rounded-lg hover:bg-blue-500 transition-all text-gray-800 hover:text-black font-semibold bg-blue-200 p-2 items-center">
+					className="flex rounded-lg hover:bg-blue-400 transition-all text-gray-800 hover:text-black font-semibold bg-blue-200 p-2 items-center">
 					<span>Start Quize</span> <ArrowRightIcon className="w-5 h-5" />{" "}
 				</button>
 			</div>

@@ -17,7 +17,7 @@ const Header = () => {
 									Programming Language Quizzes
 								</h2>
 								<p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
-									A comprehensive database of more than 77 programming language
+									A comprehensive database of more than 36 programming language
 									quizzes online, test your knowledge with programming language
 									quiz questions.
 								</p>
