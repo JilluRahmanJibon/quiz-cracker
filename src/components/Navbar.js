@@ -1,72 +1,61 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-
+import "./Navbar.css";
 const Navbar = () => {
 	const [open, setOpen] = useState(false);
 	return (
 		<div className=" py-4 px-2 shadow-xl">
 			<nav className=" flex md:w-5/6 mx-auto justify-between">
 				<div>
-					<NavLink to="/" className="font-bold text-2xl">
+					<Link to="/" className="font-bold text-2xl">
 						{" "}
 						Quizzes on PL
-					</NavLink>
+					</Link>
 				</div>
 				<div className="flex flex-row-reverse">
 					<div className="w-8 md:hidden" onClick={() => setOpen(!open)}>
 						{open ? <XMarkIcon /> : <Bars3Icon />}
 					</div>
 					<ul
-						className={`md:flex  bg-gray-200 md:bg-white   w-full justify-center duration-500 ease-in-out  md:static absolute gap-5 ${
+						className={`md:flex  bg-gray-200 md:bg-white   w-full justify-center duration-500 ease-in-out  z-50 md:static absolute gap-5 ${
 							open ? "top-12" : "-top-44"
 						}`}>
-						<li className="md:hover:bg-white hover:bg-purple-400 py-1 transition-all md:pl-0 pl-4 hover:text-white   font-semibold  md:hover:pl-0 hover:pl-12">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "text-black font-bold " : " text-gray-700"
-								}
-								to="/home">
+						<NavLink
+							to="/home"
+							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
+							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
 								Home
-							</NavLink>
-						</li>
-						<li className="md:hover:bg-white hover:bg-purple-400 py-1 transition-all md:pl-0 pl-4 hover:text-white   font-semibold  md:hover:pl-0 hover:pl-12">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "text-black font-bold " : " text-gray-700"
-								}
-								to="statisticks">
+							</li>
+						</NavLink>
+						<NavLink
+							to="statisticks"
+							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold    `}>
+							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
 								Statisticks
-							</NavLink>
-						</li>
-						<li className="md:hover:bg-white hover:bg-purple-400 py-1 transition-all md:pl-0 pl-4 hover:text-white   font-semibold  md:hover:pl-0 hover:pl-12">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "text-black font-bold " : " text-gray-700"
-								}
-								to="/topic">
+							</li>
+						</NavLink>
+						<NavLink
+							to="topic"
+							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
+							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
 								Topic
-							</NavLink>
-						</li>
-						<li className="md:hover:bg-white hover:bg-purple-400 py-1 transition-all md:pl-0 pl-4 hover:text-white   font-semibold  md:hover:pl-0 hover:pl-12">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "text-black font-bold " : " text-gray-700"
-								}
-								to="/blog">
+							</li>
+						</NavLink>
+						<NavLink
+							to="blog"
+							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
+							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
 								Blog
-							</NavLink>
-						</li>
-
-						<li className="md:hover:bg-white hover:bg-purple-400 py-1 transition-all md:pl-0 pl-4 hover:text-white   font-semibold  md:hover:pl-0 hover:pl-12">
-							<NavLink
-								className={({ isActive }) =>
-									isActive ? "text-black font-bold " : " text-gray-700"
-								}
-								to="/about">
+							</li>
+						</NavLink>
+						<NavLink
+							to="about"
+							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
+							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
 								About
-							</NavLink>
-						</li>
+							</li>
+						</NavLink>
 					</ul>
 				</div>
 			</nav>

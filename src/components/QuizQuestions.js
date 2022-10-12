@@ -8,7 +8,6 @@ const QuizQuestions = ({ questionAndAnswer, I }) => {
 	const answer = correctAnswer.replaceAll(" ", "");
 	const quizIdentifyHandler = innerText => {
 		const inner = innerText.replaceAll(" ", "");
-		console.log(inner);
 		if (inner === answer) {
 			toast.success("Congratulations ! you are selected right answer.", {
 				autoClose: 500,
@@ -17,6 +16,7 @@ const QuizQuestions = ({ questionAndAnswer, I }) => {
 			toast.warning("you are selected wrong answer ! ", { autoClose: 500 });
 		}
 	};
+	const questionFirst = question.replaceAll("<p>", " ").replaceAll("</p>", " ");
 	return (
 		<div className="border-2 mb-12 text-purple-500 rounded p-4 shadow-md lg:w-1/2 md:w-4/5 mx-2 md:mx-auto">
 			<div className=" flex justify-between relative">
@@ -24,9 +24,7 @@ const QuizQuestions = ({ questionAndAnswer, I }) => {
 					<h1 className="font-semibold">
 						Quiz:<span className="font-bold text-black">{I}</span>
 					</h1>
-					<p className="text-xl w-full text-semibold">
-						{question.slice(3, -4)}
-					</p>
+					<p className="text-xl w-full text-semibold">{questionFirst}</p>
 				</div>
 				<div className="flex flex-row-reverse ">
 					<div
