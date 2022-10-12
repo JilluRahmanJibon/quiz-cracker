@@ -4,11 +4,11 @@ import { toast } from "react-toastify";
 
 const QuizQuestions = ({ questionAndAnswer, I }) => {
 	const [open, setOpen] = useState(false);
-	const { correctAnswer, question, options } = questionAndAnswer;
-	const answer = correctAnswer.replaceAll(" ", "");
+	const { correctAnswer, id, question, options } = questionAndAnswer;
+	const answer = correctAnswer.replaceAll("   ", " ").replaceAll("  ", " ");
+
 	const quizIdentifyHandler = innerText => {
-		const inner = innerText.replaceAll(" ", "");
-		if (inner === answer) {
+		if (innerText === answer) {
 			toast.success("Congratulations ! you are selected right answer.", {
 				autoClose: 500,
 			});
@@ -47,7 +47,7 @@ const QuizQuestions = ({ questionAndAnswer, I }) => {
 					<div
 						className="border-2 pl-2  rounded-lg flex items-center gap-2 "
 						key={idx}>
-						<input type="radio" name="quiz" id={option} />
+						<input type="radio" name={id} id={option} />
 						<label
 							className="w-full py-4 cursor-pointer h-full"
 							htmlFor={option}
