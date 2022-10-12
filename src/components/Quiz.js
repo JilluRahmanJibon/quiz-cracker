@@ -9,7 +9,7 @@ const Quiz = () => {
 	return (
 		<div className="text-center pt-16">
 			<h1 className="font-bold text-3xl  text-gray-600 pb-5">
-				Quiz Of <span className="text-purple-600">{useQuiz.name}</span>
+				Quiz Of <span className="text-teal-600">{useQuiz.name}</span>
 			</h1>
 			{questions.map((question, i) => (
 				<QuizQuestions

@@ -18,7 +18,7 @@ const QuizQuestions = ({ questionAndAnswer, I }) => {
 	};
 	const questionFirst = question.replaceAll("<p>", " ").replaceAll("</p>", " ");
 	return (
-		<div className="border-2 mb-12 text-purple-500 rounded p-4 shadow-md lg:w-1/2 md:w-4/5 mx-2 md:mx-auto">
+		<div className="border-2 mb-12 text-teal-400 rounded p-4 shadow-md lg:w-1/2 md:w-4/5 mx-2 md:mx-auto">
 			<div className=" flex justify-between relative">
 				<div className="text-center flex w-full">
 					<h1 className="font-semibold">

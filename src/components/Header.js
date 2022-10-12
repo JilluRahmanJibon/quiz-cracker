@@ -14,7 +14,7 @@ const Header = () => {
 						<div className="flex flex-col items-center justify-between xl:flex-row">
 							<div className="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
 								<h2 className="max-w-lg  font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-									Programming Language Quizzes
+									Quizzes Of Programming Language
 								</h2>
 								<p className="max-w-xl mb-4 text-base text-gray-400 md:text-lg">
 									A comprehensive database of more than 36 programming language
