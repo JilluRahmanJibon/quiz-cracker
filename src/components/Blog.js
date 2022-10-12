@@ -88,10 +88,7 @@ const Blog = () => {
 							</span>{" "}
 							Are Some Faq's
 						</h2>
-						<p class="text-base text-gray-700 md:text-lg">
-							You can give us your questions through newsletter.We will try to
-							answer.
-						</p>
+						<p class="text-base text-gray-700 md:text-lg"></p>
 					</div>
 				</div>
 				<div class="space-y-4">

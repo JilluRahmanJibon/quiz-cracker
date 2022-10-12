@@ -22,6 +22,7 @@ const Navbar = () => {
 							open ? "top-12" : "-top-44"
 						}`}>
 						<NavLink
+							title="Home"
 							to="/home"
 							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
 							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
@@ -29,6 +30,7 @@ const Navbar = () => {
 							</li>
 						</NavLink>
 						<NavLink
+							title="Statistics"
 							to="statistics"
 							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold    `}>
 							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
@@ -36,6 +38,7 @@ const Navbar = () => {
 							</li>
 						</NavLink>
 						<NavLink
+							title="Topic"
 							to="topic"
 							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
 							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
@@ -43,6 +46,7 @@ const Navbar = () => {
 							</li>
 						</NavLink>
 						<NavLink
+							title="Blog"
 							to="blog"
 							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
 							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
@@ -50,6 +54,7 @@ const Navbar = () => {
 							</li>
 						</NavLink>
 						<NavLink
+							title="About"
 							to="about"
 							className={`text-gray-500 md:hover:bg-white  hover:bg-purple-400 py-1 transition-all font-semibold  `}>
 							<li className="md:hover:pl-0 hover:pl-12 transition-all py-1 w-full md:pl-0 pl-4 hover:text-gray-900 hover:font-bold">
