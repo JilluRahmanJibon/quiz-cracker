@@ -1,24 +1,53 @@
-quiz-crackerz-Assignment
+ 
+# Quizzes on PL
+# Quizzes on PL full form is => Quizzes on Programming Languages
 
-#website link : https://quiz-of-programming-language.netlify.app
 
-#this website is about quiz there have multiple quiz for developer react, css, javscript etc
+## Quiz Live WebSite Link: https://quiz-of-programming-language.netlify.app
 
-#you can participate in this quizian world quize option
 
-#use various think for build this website
 
-#css framWork : tailwind
+Quizzes on PL is a cloud-enabled, mobile-ready
+In this website ReactJS-powered Tailwind Css Recharts are used.
 
-#custom template use : Mamba ui https://www.mambaui.com/components/error , kitwind https://kitwind.io/products/kometa/components/headers
+- Click On Start Practices Button
+- Challenge Your Abilty
+- ✨Magic ✨
 
-#toast : react tostify
+## Description
 
-#icon : hero icon
+You can take fun quizes with your friends😁!! 
+Dev Goal: Learn React Router Dom...
 
-QUIZ API LINK:
-Get all quiz topics: https://openapi.programming-hero.com/api/quiz
+### Packages: 
+1. Used React JS Framework.
+2. React Router for client site navigation.
+3. NPM as package manager.
+3. Tailwind.
+4. Recharts.
+5. Hero Icon.
+6. Context Api
 
-Get topic details by topic id: https://openapi.programming-hero.com/api/quiz/${id}
+### Some features of my project: 
 
-Example: https://openapi.programming-hero.com/api/quiz/1
+1. This site is responsive for mobile and Desktop. 
+2. You can get your marks on top. 
+
+
+---
+## How To Use
+
+Just select your courses and start the quiz
+
+---
+
+
+## Installation
+
+Quizzes on PL requires [Node.js](https://nodejs.org/) , React Js , Router, Recats Icon, Recharts  to run.
+
+Install the dependencies and devDependencies and start the server.
+
+
+npm start
+npm run build
