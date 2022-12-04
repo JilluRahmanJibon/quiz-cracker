@@ -5,10 +5,9 @@ import { toast } from "react-toastify";
 const QuizQuestions = ({ questionAndAnswer, I }) => {
 	const [open, setOpen] = useState(false);
 	const { correctAnswer, id, question, options } = questionAndAnswer;
-	const answer = correctAnswer.replaceAll("   ", " ").replaceAll("  ", " ");
 
-	const quizIdentifyHandler = innerText => {
-		if (innerText === answer) {
+	const quizIdentifyHandler = value => {
+		if (value === correctAnswer) {
 			toast.success("Congratulations ! you are selected right answer.", {
 				autoClose: 500,
 			});
@@ -47,11 +46,17 @@ const QuizQuestions = ({ questionAndAnswer, I }) => {
 					<div
 						className="border-2 pl-2  rounded-lg flex items-center gap-2 "
 						key={idx}>
-						<input type="radio" name={id} id={option} />
+						<input
+							className="cursor-pointer"
+							onClick={e => quizIdentifyHandler(e.target.value)}
+							type="radio"
+							name={id}
+							id={option}
+							value={option}
+						/>
 						<label
 							className="w-full py-4 cursor-pointer h-full"
-							htmlFor={option}
-							onClick={e => quizIdentifyHandler(e.target.innerText)}>
+							htmlFor={option}>
 							{" "}
 							<p>{option}</p>
 						</label>
